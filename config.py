@@ -20,6 +20,9 @@ BOT_USERNAME = getenv("BOT_USERNAME","NOBITA_MUSIC_ROBOT")
 BOT_NAME = getenv("BOT_NAME")
 # ---------------------------------------------------------
 
+# Vars For API End Pont.
+YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## E.G https://yt.okflix.
+YT_API_KEY = getenv("YT_API_KEY" , None ) ## get your
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -32,9 +35,6 @@ LOGGER_ID = int(getenv("LOGGER_ID", -1002344707828))
 # Get this value from @PURVI_HELP_BOT on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", 5536473064))
 
-# Vars For API End Pont.
-YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## xBit Music Endpoint.
-YT_API_KEY = getenv("YT_API_KEY" , None ) ## Your API key like: x
 
 # make your bots privacy from telegra.ph and put your url here 
 PRIVACY_LINK = getenv("PRIVACY_LINK", "https://graph.org/PRIVACY-FOR-TEAM-PURVI-BOTS-09-18")
@@ -47,15 +47,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/aditya88402/Swara-network-0000.git",
+    "https://github.com/aditya88402/Swaranetwork8902",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/NOB1TA_SUPPORT")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+WLTHgUAvkYVmNTg9")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/TG_HEISTS")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+o7_uPKxtL5hkY2Q1")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -129,3 +129,4 @@ if SUPPORT_CHAT:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_CHAT url is wrong. Please ensure that it starts with https://"
         )
+        
